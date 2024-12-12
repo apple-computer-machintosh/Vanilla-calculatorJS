@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>本当はwebフレームワークを使いたいけどhtmlで書いてみるど</title>
+    <link href="styles/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="result-box">
+        <div class="result" id="display" onclick="handleButtonClick('result')">
+          0
+        </div>
+      </div>
+      <div class="calc-button">
+        <div class="num">
+          <span class="button special" onclick="handleButtonClick('AC')"
+            >AC</span
+          >
+          <span class="button special" onclick="handleButtonClick('+-')"
+            >±</span
+          >
+          <span class="button special" onclick="handleButtonClick('%')">%</span>
+          <span class="button mark" onclick="handleButtonClick('/')">÷</span>
+        </div>
+        <div class="num">
+          <span class="button" onclick="handleButtonClick('7')">7</span>
+          <span class="button" onclick="handleButtonClick('8')">8</span>
+          <span class="button" onclick="handleButtonClick('9')">9</span>
+          <span class="button mark" onclick="handleButtonClick('*')">×</span>
+        </div>
+        <div class="num">
+          <span class="button" onclick="handleButtonClick('4')">4</span>
+          <span class="button" onclick="handleButtonClick('5')">5</span>
+          <span class="button" onclick="handleButtonClick('6')">6</span>
+          <span class="button mark" onclick="handleButtonClick('-')">-</span>
+        </div>
+        <div class="num">
+          <span class="button" onclick="handleButtonClick('1')">1</span>
+          <span class="button" onclick="handleButtonClick('2')">2</span>
+          <span class="button" onclick="handleButtonClick('3')">3</span>
+          <span class="button mark" onclick="handleButtonClick('+')">+</span>
+        </div>
+        <div class="num">
+          <span class="button" onclick="handleButtonClick('.')">.</span>
+          <span class="button" onclick="handleButtonClick('0')">0</span>
+          <span class="button" onclick="handleButtonClick('del')">del</span>
+          <span class="button equal mark" onclick="handleButtonClick('=')"
+            >=</span
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="scripts/script.js"></script>
+</html>
